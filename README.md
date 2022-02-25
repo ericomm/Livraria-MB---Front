@@ -25,3 +25,24 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Configurações basicas do projeto:
+
+Branch para subir as tarefas é a /*desevolvimentos*/ 
+
+Banco de Dados 
+
+PostegreSql
+Senha inicial :brilhantes 
+Database:livraria_mentes_brilhantes
+
+Usuario: 
+CREATE USER livraria with password 'brilhantes' ; 
+
+Front-End 
+
+A primeira vez que vc clona o projeto deve instalar o :
+
+npm install
+
+//para que ele adicione a dependencia @node_moludes

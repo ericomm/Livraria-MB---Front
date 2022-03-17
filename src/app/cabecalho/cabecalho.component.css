@@ -1,0 +1,224 @@
+body,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    list-style: none;
+    color: #333;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+    background-color: rgba(0,0,0,.8);
+    margin: 0;
+    padding: 5px;
+    max-width: 700px;;
+}
+
+h2 {
+    text-align: center;
+    margin: 50px 0 10px 0;
+}
+
+img{
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 40px;
+  height: 90px;
+  background-color: var(--azul);
+}
+
+.logo{
+  width: 200px;
+}
+
+.categorias{
+  justify-content: center;
+  border-top: 1px solid var(--branco);
+  background-color: var(--azul);
+
+}
+
+.categorias button{
+  display: flex;
+  border: none;
+  background: var(--azul);
+  color: #ffff;
+  font-size: 1rem;
+  padding: 13px 40px 10px 40px;
+  height: 52px;
+
+}
+
+.categorias p{
+  color: #FFF;
+  padding-left: 10px;
+}
+
+.categorias mat-icon{
+  text-align: end;
+}
+
+
+.search-container{
+  width: 100%;
+}
+
+.search-container form{
+  display: flex;
+  border: 1px solid #E5E5E5,
+}
+.search-container input{
+  border: 1px solid;
+  width: 80%;
+  height: 42px;
+  display: flex;
+  padding: 0 20px;
+  font-size: 1rem;
+}
+
+.search-container button{
+  border: 0;
+  width: 19%;
+  height: 44px;
+  border: 1px solid;
+}
+
+.search-container i{
+  font-size: 1.2rem;
+}
+
+
+
+/* Banner Full */
+.full-banner {
+    background-image: url("/assets/img/logos/banner-header.jpeg") ;
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    padding: 0 30px;
+}
+
+
+.navbar-menu{
+  display: flex;
+  align-items: center;
+}
+
+.galeria {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.galeria > div {
+    margin: 10px;
+}
+
+.card_botao{
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+}
+
+
+footer {
+    background-color: #222;
+    margin-top: 30px;
+    padding: 30px 20px;
+}
+
+footer p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #999;
+}
+
+
+/* Serão aplicados essas propriedades de estilo, somente se o
+viewport tiver no mínimo 465px de largura, ou seja, se for maior que 465px de largura */
+@media screen and (min-width:500px) {
+
+
+
+
+  .logo{
+    width: 210px;
+  }
+
+
+  .full-banner {
+    height: 200px;
+    padding: 0 30px;
+}
+
+  /* Seleciona todos os elementos "div" que forem filhos diretos de uma tag com a classe "galeria" */
+  .galeria>div{
+      display: inline-block;
+      max-width: 45%;
+  }
+
+
+}
+
+@media screen and (min-width:780px) {
+
+    .header{
+      padding: 40px 280px;
+    }
+
+  /*textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}*/
+
+
+  .carrinho-box {
+    padding-left: 40px;
+  }
+
+  .categorias{
+    justify-content: left;
+    padding: 0 250px;
+  }
+
+
+  .search-container form{
+    background-color: var(--azul);
+    padding: 0 200px;
+  }
+
+  .full-banner {
+    height: 300px;
+    padding: 0 30px;
+}
+
+
+  .galeria>div{
+      max-width: 30%;
+      display: inline-block;
+  }
+
+
+
+}

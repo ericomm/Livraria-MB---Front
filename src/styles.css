@@ -2,3 +2,14 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+/* variaveis e  valores css default*/
+:root{
+  --background: #E5E5E5;
+  --font-color: #333333;
+  --azul: #4D41C0;
+  --branco: #FFFF;
+
+}

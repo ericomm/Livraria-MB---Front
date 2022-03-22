@@ -1,0 +1,50 @@
+footer{
+  display: flex;
+  margin: 40px 100px 0 100px;
+  flex-direction: column;
+
+
+
+
+}
+
+.cartoes-box{
+  display: flex;
+}
+
+.cartoes-box ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.cartoes-box ul li img{
+  width: 47px;
+  padding-right: 10px;
+}
+
+
+.cartoes-box ul li .redes{
+  width: 30px;
+}
+
+
+@media screen and (min-width:760px) {
+  footer{
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 200px 0 200px;
+
+
+  }
+
+
+
+  @media screen and (min-width:1000px) {
+    footer{
+      margin: 40px 280px 0 280px;
+    }
+  }
+}
+

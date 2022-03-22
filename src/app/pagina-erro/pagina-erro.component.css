@@ -1,0 +1,38 @@
+section{
+  background-color: #E5E5E5;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+.box-erro{
+  width: 30%;
+  height: 350px;
+  background-color: #FFFF;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.box-erro img{
+  width: 120px;
+  padding-bottom: 40px;
+}
+
+.box-erro h3{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.box-erro h4{
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+
+
+
+

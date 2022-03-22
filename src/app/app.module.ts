@@ -12,6 +12,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { LivrosComponent } from './tela-inicial/livros/livros.component';
 import { RodapeComponent } from './rodape/rodape.component';
+import { DetalhesLivroComponent } from './detalhes-livro/detalhes-livro.component';
+import { PesquisaComponent } from './tela-inicial/pesquisa/pesquisa.component';
+import { PaginaErroComponent } from './pagina-erro/pagina-erro.component';
 
 
 
@@ -25,6 +28,10 @@ import { RodapeComponent } from './rodape/rodape.component';
     CabecalhoComponent,
     LivrosComponent,
     RodapeComponent,
+    DetalhesLivroComponent,
+    PesquisaComponent,
+    PaginaErroComponent,
+
 
   ],
   imports: [

@@ -32,6 +32,7 @@ h2 {
     text-align:center;
     font-size: 2rem;
     padding: 50px 0;
+    margin: 0;
 
 }
 
@@ -40,67 +41,10 @@ img{
   border-radius: 3px;
 }
 
-
-.header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 40px;
-  height: 90px;
-  background-color: var(--azul);
+.banner{
+  background-color: #E5E5E5;
 }
 
-
-.logo{
-  width: 200px;
-}
-
-.search-box form{
-  display: none;
-}
-
-
-.search-container{
-  width: 100%;
-}
-
-.search-container form{
-  display: flex;
-  border: 1px solid #E5E5E5,
-}
-.search-container input{
-  border: 0;
-  width: 80%;
-  height: 40px;
-  display: flex;
-}
-
-.search-container button{
-  border: 0;
-  width: 19%;
-  height: 40px;
-}
-
-
-/* Banner Full
-.full-banner {
-    background-image: url("/assets/img/logos/banner-header.jpeg") ;
-    background-size: cover;
-    background-position: center;
-    height: 100px;
-    padding: 0 30px;
-}*/
-
-.categorias{
-  box-sizing: border-box;
-  display: none;
-
-}
-
-.navbar-menu{
-  display: flex;
-  align-items: center;
-}
 
 .galeria-box{
   width: 100%;
@@ -109,6 +53,7 @@ img{
 
 .galeria {
     margin: 0 auto;
+    padding-bottom: 40px;
     max-width: 1000px;
 
 
@@ -129,42 +74,10 @@ img{
 }
 
 
-footer {
-    background-color: #222;
-    margin-top: 30px;
-    padding: 30px 20px;
-}
-
-footer p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: #999;
-}
 
 
-/* Serão aplicados essas propriedades de estilo, somente se o
-viewport tiver no mínimo 465px de largura, ou seja, se for maior que 465px de largura */
 @media screen and (min-width:500px) {
 
-    .header{
-      padding: 0 100px;
-    }
-
-    .header-desk{
-      display: none;
-    }
-
-    .logo{
-      width: 210px;
-    }
-
-
-    .full-banner {
-      height: 200px;
-      padding: 0 30px;
-  }
-
-    /* Seleciona todos os elementos "div" que forem filhos diretos de uma tag com a classe "galeria" */
     .galeria>div{
         display: inline-block;
         max-width: 45%;
@@ -175,60 +88,11 @@ viewport tiver no mínimo 465px de largura, ou seja, se for maior que 465px de l
 
 @media screen and (min-width:780px) {
 
-  .header{
-    display: none;
+
+  .banner img{
+    width: 100%;
+
   }
-  .header-desk{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 40px;
-    height: 90px;
-    background-color: var(--azul);
-  }
-
-    .search-container form{
-      display: none;
-    }
-    .search-box form{
-      display: flex;
-    }
-
-
-    .search-box input{
-      width: 400px;
-      height: 30px;
-      border-color: var(--branco);
-
-    }
-
-    /*textarea:focus, input:focus, select:focus {
-      box-shadow: 0 0 0 0;
-      border: 0 none;
-      outline: 0;
-  }*/
-
-    .search-box button{
-      width: 60px;
-      height: 36px;
-      border-left-width: 0px;
-      border-color: var(--branco);
-      background-color: var(--azul);
-      text-decoration: none;
-    }
-
-    .search-box i{
-      font-size: 16px;
-      color: var(--branco);
-    }
-
-    .carrinho-box {
-      padding-left: 40px;
-    }
-
-
-
-
 
     .galeria>div{
         max-width: 23%;

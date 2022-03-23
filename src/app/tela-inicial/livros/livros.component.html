@@ -6,46 +6,16 @@
   <h2 id="galeria">Livros</h2>
 
   <section class="galeria">
+    <div *ngFor ="let livro of livros">
+      <img src="{{livro.capa}}" alt="">
+
       <div class="card">
-        <img class="card_imagem" src="assets/img/logos/capa-livro.webp" alt="">
-        <p  class="card_titulo">Título</p>
+
+        <h4  class="card_titulo">{{livro.titulo}}</h4>
         <button class="card_botao" mat-raised-button color="primary">Saiba mais</button>
-    </div>
-    <div class="card">
-      <img class="card_imagem" src="assets/img/logos/capa-livro.webp" alt="">
-      <p  class="card_titulo">Título</p>
-      <button class="card_botao" mat-raised-button color="primary">Saiba mais</button>
-    </div>
-    <div class="card">
-      <img class="card_imagem" src="assets/img/logos/capa-livro.webp" alt="">
-      <p  class="card_titulo">Título</p>
-      <button class="card_botao" mat-raised-button color="primary">Saiba mais</button>
-    </div>
-    <div class="card">
-      <img class="card_imagem" src="assets/img/logos/capa-livro.webp" alt="">
-      <p  class="card_titulo">Título</p>
-      <button class="card_botao" mat-raised-button color="primary">Saiba mais</button>
-    </div>
-    <div class="card">
-      <img class="card_imagem" src="assets/img/logos/capa-livro.webp" alt="">
-      <p  class="card_titulo">Título</p>
-      <button class="card_botao" mat-raised-button color="primary">Saiba mais</button>
-    </div>
-    <div class="card">
-      <img class="card_imagem" src="assets/img/logos/capa-livro.webp" alt="">
-      <p  class="card_titulo">Título</p>
-      <button class="card_botao" mat-raised-button color="primary">Saiba mais</button>
-    </div>
-    <div class="card">
-      <img class="card_imagem" src="assets/img/logos/capa-livro.webp" alt="">
-      <p  class="card_titulo">Título</p>
-      <button class="card_botao" mat-raised-button color="primary">Saiba mais</button>
-    </div>
-    <div class="card">
-      <img class="card_imagem" src="assets/img/logos/capa-livro.webp" alt="">
-      <p  class="card_titulo">Título</p>
-      <button class="card_botao" mat-raised-button color="primary">Saiba mais</button>
-    </div>
+      </div>
+  </div>
+
   </section>
 </div>
 

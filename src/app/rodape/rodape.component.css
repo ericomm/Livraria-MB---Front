@@ -43,7 +43,7 @@ footer{
 
   @media screen and (min-width:1000px) {
     footer{
-      margin: 40px 280px 0 280px;
+      margin: 40px 150px 0 150px;
     }
   }
 }

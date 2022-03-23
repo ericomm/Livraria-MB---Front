@@ -15,6 +15,7 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { DetalhesLivroComponent } from './detalhes-livro/detalhes-livro.component';
 import { PesquisaComponent } from './tela-inicial/pesquisa/pesquisa.component';
 import { PaginaErroComponent } from './pagina-erro/pagina-erro.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -41,7 +42,8 @@ import { PaginaErroComponent } from './pagina-erro/pagina-erro.component';
     MatToolbarModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

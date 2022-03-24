@@ -1,23 +1,38 @@
+
+
+
+
 <div class="banner">
   <img src="assets/img/logos/banner-header.jpeg" alt="">
 </div>
 
-<div class="galeria-box">
-  <h2 id="galeria">Livros</h2>
-
-  <section class="galeria">
-    <div *ngFor ="let livro of livros">
-      <img src="{{livro.capa}}" alt="">
-
-      <div class="card">
-
-        <h4  class="card_titulo">{{livro.titulo}}</h4>
-        <button class="card_botao" mat-raised-button color="primary">Saiba mais</button>
+<div class="galeria">
+  <h2 class="chamada">Livros</h2>
+  <div class="conteudo">
+      <div *ngFor ="let livro of livros">
+        <img class="capa" src="{{livro.capa}}" alt="">
+        <div  class= "titulo">
+          <h4  class="card_titulo">{{livro.titulo}}</h4>
+        </div>
+        <div class="botao">
+          <button class="card_botao" mat-raised-button color="primary">Saiba mais</button>
+        </div>
       </div>
   </div>
-
-  </section>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

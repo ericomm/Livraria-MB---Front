@@ -1,56 +1,56 @@
 <section>
-  <div class="container">
 
-    <div class="box-titulo">
-      <h2>TITULO</h2>
-      <h3> AUTOR</h3>
-    </div>
-
-    <div class="container2">
-      <div class="box-capa">
-        <img src="assets/img/logos/capa-livro.webp" alt=""/>
-      </div>
-    </div>
-
-
-
-  </div>
-  <div class="box-preco">
-    <p>Preço: 39,90</p>
-    <button class="card_botao" mat-raised-button color="primary">Adiconar ao carrinho</button>
-  </div>
-
-  <div class="box-infos">
-    <h3>Informações do produto</h3>
-
-    <table class="mat-elevation-z2">
-      <tbody>
-        <tr>
-          <td class="titulo-coluna">Número de páginas:</td>
-          <td data-test="livro-numeroPaginas"></td>
-        </tr>
-        <tr>
-          <td class="titulo-coluna">ISBN:</td>
-          <td data-test="livro-isbn"></td>
-        </tr>
-        <tr>
-          <td class="titulo-coluna">Data de publicação:</td>
-          <td data-test="livro-dataPublicacao">
-        </tr>
-        <tr>
-          <td>Descrição:</td>
-          <td>
-            <div>
-            <p>Neste livro, Eduardo Gonçalves demonstrará diversas técnicas para escrever instruções SQL de forma apropriada para que o
-              otimizador do banco de dados possa escolher um plano de execução eficaz para executá-las. Por meio de técnicas, como a criação d
-              e índices, uso de sugestões (hints), ajustes de sintaxe e métodos de acesso a tabelas, além de ferramentas de auxílio de Tuning SQL,
-              ocê será capaz de analisar aplicações problemáticas, gerar estatísticas para o otimizador e obter informações
-              das instruções executadas no banco de dados Oracle.
-            </p>
+    <div>
+			<ul class = "produtos" >
+				<li>
+          <div class="titulos">
+            <h2>{{ livro.titulo }}</h2>
+            <p>{{ livro.subtitulo }}</p>
+            <h4>{{ livro.autor.nome }}</h4>
           </div>
-        </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+					<img class="capa" src="{{ livro.capa }}">
+					<div class="box-preco">
+					  <p class="produto-preco">{{ livro.preco | currency: "BRL"  }}</p>
+            <button class="card_botao" mat-raised-button color="primary" >Adicionar ao carrinho</button>
+          </div>
+				</li>
+      </ul>
+    </div>
+
+    <div class="box-infos">
+      <h3>Detalhes do produto</h3>
+
+      <table class="mat-elevation-z2">
+        <tbody>
+          <tr>
+            <td class="titulo-coluna">Número de páginas:</td>
+            <td>{{ livro.numero_de_paginas}}</td>
+          </tr>
+          <tr>
+            <td class="titulo-coluna">ISBN:</td>
+            <td> {{ livro.isbn}} </td>
+          </tr>
+          <tr>
+            <td class="titulo-coluna">Data de publicação:</td>
+            <td> {{ livro.data_publicacao}} </td>
+          </tr>
+          <tr>
+            <td>Sumario:</td>
+            <td>
+              <div class="sumario">
+              <p>{{ livro.sumario }}</p>
+            </div>
+          </td>
+          </tr>
+          <tr>
+            <td>Descrição:</td>
+            <td>
+              <div class="descricao">
+              <p>{{ livro.categoria.descricao}}</p>
+            </div>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 </section>

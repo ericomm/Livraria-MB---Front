@@ -16,6 +16,9 @@ import { DetalhesLivroComponent } from './detalhes-livro/detalhes-livro.componen
 import { PesquisaComponent } from './tela-inicial/pesquisa/pesquisa.component';
 import { PaginaErroComponent } from './pagina-erro/pagina-erro.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CategoriasComponent } from './tela-inicial/categorias/categorias.component';
+import { MatMenuModule} from '@angular/material/menu';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -32,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
     DetalhesLivroComponent,
     PesquisaComponent,
     PaginaErroComponent,
+    CategoriasComponent,
 
 
   ],
@@ -44,6 +48,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     MatIconModule,
     HttpClientModule,
+    MatMenuModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

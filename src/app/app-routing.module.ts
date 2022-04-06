@@ -1,3 +1,4 @@
+import { CategoriasComponent } from './tela-inicial/categorias/categorias.component';
 import { PaginaErroComponent } from './pagina-erro/pagina-erro.component';
 import { DetalhesLivroComponent } from './detalhes-livro/detalhes-livro.component';
 import { TelaInicialComponent } from './tela-inicial/tela-inicial.component';
@@ -7,9 +8,12 @@ import { PesquisaComponent } from './tela-inicial/pesquisa/pesquisa.component';
 
 const routes: Routes = [
   { path: '', component: TelaInicialComponent},
-  { path: 'livro', component: DetalhesLivroComponent },
-  { path: 'pesquisa', component: PesquisaComponent },
+  { path: 'detalhes/:id', component: DetalhesLivroComponent },
+  { path: 'pesquisa/:tituloLivroOuNomeAutor', component: PesquisaComponent },
+  { path: 'categoria/:nome', component: CategoriasComponent},
   { path: 'erro', component: PaginaErroComponent},
+
+
 
 ];
 

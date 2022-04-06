@@ -1,1 +1,23 @@
-<p>resultado pesquisa</p>
+<div >
+  <div class="galeria">
+    <h2 class="chamada">Livros</h2>
+    <div class="conteudo">
+        <div *ngFor ="let livro of livros">
+          <img class="capa" src="{{livro.capa}}" alt="">
+          <div  class= "titulo">
+            <h4  class="card_titulo">{{livro.titulo}}</h4>
+          </div>
+          <div class="autor">
+            <h5 data-test="livro-autor">{{ livro.autor.nome }}</h5>
+          </div>
+          <div class="botao">
+            <button  class="card_botao" mat-raised-button color="primary">Saiba mais</button>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+

@@ -4,13 +4,18 @@
       <img src="assets/img/logos/logo-branco.svg" alt="logo" class="logo">
     </a>
   </span>
-
-  <div class="search-container">
-    <form action="">
-      <input type="text" placeholder="Busque por título ou autor " name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
+  <form [formGroup]="searchForm" (ngSubmit)="buscaLivro()">
+    <div class="search-container">
+      <div>
+        <input
+          type="text"
+          placeholder="Busque por título ou autor "
+          name="Buscar"
+          formControlName="livro"/>
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+  </form>
 
   <span class="carrinho-box">
     <a href="">
@@ -20,10 +25,28 @@
 </mat-toolbar>
 
 <mat-toolbar class="categorias">
-    <button>
+  <div class="categoria" id="Categorias">
+    <button class="categoria"
+      mat-icon-button
+      [matMenuTriggerFor]="belowMenu"
+      aria-label="menu de categorias dos livros">
       <mat-icon >menu</mat-icon>
-      <p>Pesquise por categorias</p>
+      <p>Categorias</p>
     </button>
+
+    <mat-menu #belowMenu="matMenu" yPosition="below" class="mat-menu">
+      <div *ngFor="let categoria of categorias">
+        <a>
+          <button id="{{categoria.nome}}"
+            mat-menu-item
+            [routerLink]="['/categoria', categoria.nome]">
+            {{ categoria.nome }}
+          </button>
+        </a>
+      </div>
+    </mat-menu>
+
+  </div>
 </mat-toolbar>
 
 

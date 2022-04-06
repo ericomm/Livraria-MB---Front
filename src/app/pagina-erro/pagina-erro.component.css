@@ -1,25 +1,26 @@
 section{
   background-color: #E5E5E5;
   width: 100%;
-  height: 600px;
+  height: 500px;
   display: flex;
   align-items: center;
 }
 .box-erro{
-  width: 30%;
-  height: 350px;
+  width: 80%;
   background-color: #FFFF;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  text-align: center;
   align-items: center;
-  justify-content: center;
+  border-radius: 4px;
+
 
 }
 
 .box-erro img{
   width: 120px;
-  padding-bottom: 40px;
+  padding: 40px 0;
+  margin: auto;
 }
 
 .box-erro h3{
@@ -30,6 +31,21 @@ section{
 .box-erro h4{
   font-size: 1rem;
   font-weight: 300;
+}
+
+
+@media screen and (min-width:500px) {
+  .box-erro{
+    width: 60%;
+  }
+
+}
+
+@media screen and (min-width:1000px) {
+  .box-erro{
+    width: 40%;
+  }
+
 }
 
 

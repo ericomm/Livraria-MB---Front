@@ -1,8 +1,73 @@
 section{
   background-color: #E5E5E5;
-  height: 1200px;
-  padding-top: 50px;
+  height: auto;
+  padding: 50px 0;
 }
+
+
+.produtos {
+	width: 100%;
+	display: flex;
+  justify-content: center;
+	padding: 50px 0;
+}
+
+.produtos li {
+  background-color: #FFF;
+	display:inline-block;
+	text-align: center;
+	width: 80%;
+	/*vertical-aling: top - orienta os objetos pela linha de cima
+	 ao contrario do normal que eh por baixo*/
+	 vertical-align: top;
+	 /*background: #CCC;*/
+	 margin: 0 0.8%;
+	 padding: 30px 20px;
+	 /**/
+	 box-sizing: border-box;
+	 /*border: 2px solid #000 - resumo para borda*/
+	 border-radius: 5px;
+
+}
+
+
+
+.capa{
+  width: 70%;
+}
+
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+.produto-descricao {
+	font-size: 18px;
+
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.box-preco{
+  margin-right: 0px;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  width: 100%;
+  padding: 0 0;
+}
+
+.box-preco p{
+  letter-spacing: 1px;
+}
+
+
 
 .container {
   width: 50%;
@@ -12,7 +77,7 @@ section{
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
-  background-color: #ffff;
+  background-color: #EAEAEA;
 
 }
 
@@ -32,28 +97,23 @@ section{
 
 }
 
-.box-preco{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-items: baseline;
-  margin-right: auto;
-
-  padding: 0 150px;
-}
-
-.box-preco p{
-  padding-right:10px;
-}
 
 .card_botao{
-  width: 220px;
+  width: 100%;
   height: 40px;
   margin-top: 20px;
   background: var(--azul);
   border: none;
   color: #FFF;
   font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.card_botao:hover{
+  background-color: #FFF;
+  color: var(--azul);
+  border: 2px solid var(--azul);
+  transition: 0.3s;
 }
 
 
@@ -63,7 +123,14 @@ section{
   display: block;
   align-content: center;
   width: 80%;
+  height: 100%;
   margin: 0 auto;
+}
+
+.box-infos h3{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 
@@ -86,3 +153,48 @@ tr:nth-child(even) {
 
 
 
+@media screen and (min-width:500px) {
+
+.capa{
+  width: 60%;
+}
+
+.titulos{
+  display: grid;
+  text-align: initial;
+}
+
+}
+
+
+@media screen and (min-width:760px) {
+
+  .produtos li {
+    width: 50%;
+  }
+
+.capa{
+  width: 45%;
+}
+
+.box-preco{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 0;
+}
+
+
+
+  .card_botao{
+    width: 40%;
+    height: 40px;
+    margin-top: 20px;
+    background: var(--azul);
+    border: none;
+    color: #FFF;
+    font-size: 1rem;
+  }
+
+}

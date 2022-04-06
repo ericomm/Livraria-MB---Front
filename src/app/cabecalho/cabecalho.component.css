@@ -77,12 +77,18 @@ img{
 
 }
 
+#menu {
+  padding: 0 30px;
+  background-color: aqua;
+
+}
+
 
 .search-container{
   width: 100%;
 }
 
-.search-container form{
+.search-container div{
   display: flex;
   margin-right: 20px;
   border: 1px solid #E5E5E5,
@@ -145,6 +151,10 @@ img{
   margin-top: 20px;
 }
 
+button p{
+  letter-spacing: 1px;
+}
+
 
 @media screen and (min-width:500px) {
 
@@ -158,6 +168,7 @@ img{
   .search-container input{
     padding-right: 20%;
   }
+
 
 
 
@@ -184,12 +195,13 @@ img{
 
 
     .logo{
-      width: 280px;
+      width: 240px;
     }
 
   .carrinho-box {
     padding-left: 40px;
   }
+
 
   .categorias{
     justify-content: left;
@@ -197,9 +209,11 @@ img{
   }
 
 
-  .search-container form{
+  .search-container div{
 
-    padding: 0 200px;
+    padding: 0 100px;
+    width: 340px;
+
   }
 
 

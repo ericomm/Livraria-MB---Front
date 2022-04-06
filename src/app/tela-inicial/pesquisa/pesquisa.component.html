@@ -11,7 +11,7 @@
             <h5 data-test="livro-autor">{{ livro.autor.nome }}</h5>
           </div>
           <div class="botao">
-            <button  class="card_botao" mat-raised-button color="primary">Saiba mais</button>
+            <button  class="card_botao" mat-raised-button color="primary" [routerLink]="['/detalhes', livro.id]">Saiba mais</button>
           </div>
         </div>
     </div>

@@ -17,19 +17,23 @@ section{
 	display:inline-block;
 	text-align: center;
 	width: 80%;
-	/*vertical-aling: top - orienta os objetos pela linha de cima
-	 ao contrario do normal que eh por baixo*/
-	 vertical-align: top;
-	 /*background: #CCC;*/
-	 margin: 0 0.8%;
-	 padding: 30px 20px;
-	 /**/
-	 box-sizing: border-box;
-	 /*border: 2px solid #000 - resumo para borda*/
-	 border-radius: 5px;
+	vertical-align: top;
+	margin: 0 0.8%;
+  padding: 30px 20px;
+	box-sizing: border-box;
+	border-radius: 5px;
 
 }
 
+.titulos h2{
+  font-size: 28px;
+  font-weight: 500;
+
+}
+
+.titulos h3{
+  font-weight: 300;
+}
 
 
 .capa{
@@ -37,10 +41,6 @@ section{
 }
 
 
-.produtos h2 {
-	font-size: 30px;
-	font-weight: bold;
-}
 
 
 .produto-descricao {
@@ -50,7 +50,7 @@ section{
 
 .produto-preco {
 	font-size: 22px;
-	font-weight: bold;
+	font-weight: 500;
 	margin-top: 10px;
 }
 

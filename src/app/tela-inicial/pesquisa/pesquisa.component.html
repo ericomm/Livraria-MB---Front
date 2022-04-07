@@ -17,6 +17,18 @@
     </div>
   </div>
 
+  <div class="pesquisaNaoEncontrada" *ngIf="!livros.length">
+      <div class="box-erro">
+        <img src="assets/img/logos/search.png" alt="lupa de procurar">
+        <h3>Não encontramos nada com o termo digitado</h3>
+        <h4>Por favor verifique sua pesquisa</h4>
+        <p  [routerLink]="['']">Voltar a pagina inicial</p>
+      </div>
+
+  </div>
+
+
+
 
 
 

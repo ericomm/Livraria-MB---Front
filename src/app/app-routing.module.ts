@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'detalhes/:id', component: DetalhesLivroComponent },
   { path: 'pesquisa/:tituloLivroOuNomeAutor', component: PesquisaComponent },
   { path: 'categoria/:nome', component: CategoriasComponent},
-  { path: 'erro', component: PaginaErroComponent},
+  { path: '**', component: PaginaErroComponent},
 
 
 

@@ -66,7 +66,7 @@ h1 {
     flex-wrap: wrap;
 
     margin: 0 auto;
-    padding-bottom: 40px;
+
     max-width: 1000px;
 
 
@@ -78,6 +78,11 @@ h1 {
 
 .capa{
   height: 300px;
+}
+
+.autor{
+  text-align: center;
+  font-size: 16px;
 }
 
 .botao{
@@ -104,6 +109,7 @@ h1 {
 .titulo{
   width: 195px;
   height: 50px;
+  text-align: center;
 }
 
 
@@ -118,6 +124,49 @@ h1 {
 
 
 
+.pesquisaNaoEncontrada{
+  background-color: #E5E5E5;
+  height: 400px;
+}
+
+.box-erro{
+  width: 80%;
+  background-color: #FFFF;
+  margin: 0 auto;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  border-radius: 4px;
+  padding-bottom: 20px;
+
+}
+
+.box-erro img{
+  width: 120px;
+  padding: 40px 0;
+  margin: auto;
+}
+
+.box-erro h3{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.box-erro h4{
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.box-erro p {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+
+
+
 @media screen and (min-width:500px) {
 
   .banner img{
@@ -128,6 +177,11 @@ h1 {
         display: inline-block;
         max-width: 45%;
     }
+
+    .box-erro{
+      width: 60%;
+    }
+
 
 
 }
@@ -162,6 +216,11 @@ h1 {
     .conteudo>div{
         max-width: 23%;
     }
+
+    .box-erro{
+      width: 50%;
+    }
+
 
 
 }
